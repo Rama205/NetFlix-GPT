@@ -1,11 +1,12 @@
 import {addUser} from "../utils/userSlice"
 import Header from "./Header";
-import { BG_URL } from "../utils/constants";
+import { BG_URL,USER_AVATAR } from "../utils/constants";
 import { useState, useRef } from "react";
 import { checkValidData } from "../utils/validation";
 import {auth} from '../utils/firebase';
 import { createUserWithEmailAndPassword,signInWithEmailAndPassword,updateProfile } from "firebase/auth";
 import { useDispatch } from "react-redux";
+
 
 
 
@@ -35,7 +36,7 @@ const Login = () => {
     // Signed up 
     updateProfile(user, {
       displayName: name.current.value, 
-      photoURL: "https://avatars.githubusercontent.com/u/87355431?v=4"
+      photoURL: USER_AVATAR
     })
     .then(() => {
       const { uid, email, displayName, photoURL } = auth.currentUser;
@@ -47,7 +48,7 @@ const Login = () => {
           photoURL: photoURL,
         })
       );
-     console.log("-----kk",user)
+    //  console.log("-----kk",user)
     }).catch((error) => {
      setErrorMsg(error)
     });

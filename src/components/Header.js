@@ -18,7 +18,7 @@ const Header = () => {
     signOut(auth)
       .then(() => {
         // Sign-out successful.
-        navigate("/");
+       
       })
       .catch((error) => {
         navigate("/error");
@@ -47,7 +47,7 @@ const Header = () => {
     });
 
     // Unsiubscribe when component unmounts
-    // return () => unsubscribe();
+    return () => unsubscribe();
   }, []);
 
   

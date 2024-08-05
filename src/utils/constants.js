@@ -16,3 +16,13 @@ const API_OPTIONS = {
     Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI0YzhlYWZhNGJkNzUzMzZjNTRiNDc0MzI4NmQ3YzQzMCIsIm5iZiI6MTcyMjY4MDE0MS41OTg4NjUsInN1YiI6IjY2YWUwMDk3OGNkNTRiNTc0ZTUwYzcxMCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.EArP7R50raqO9xE7YkfwBW1htT97w66J3qj8Zew61Jo'
   }
 };
+
+
+export const MOVIE_IMG_URL ="https://image.tmdb.org/t/p/w500";
+
+export const LANGUAGE_SUPPORT= [
+  {identifier:"en",name:"English"},
+  {identifier:"hindi",name:"Hindi"},
+  {identifier:"spanish",name:"Spanish"}
+
+]

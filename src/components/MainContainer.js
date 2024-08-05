@@ -4,6 +4,7 @@ import { useSelector } from 'react-redux'
 import VdoTitle from './VdoTitle';
 import VdoBackGround from './VdoBackGround'
 
+
  
  const MainContainer = () => {
 
@@ -11,7 +12,7 @@ import VdoBackGround from './VdoBackGround'
     if(!movies) return;
 
     const mainMovie = movies[0];
-    // console.log("=========",mainMovie)
+  
 
     const { original_title,overview,id} = mainMovie;
 

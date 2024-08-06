@@ -27,4 +27,4 @@ export const LANGUAGE_SUPPORT= [
 
 ];
 
-export const OPENAI_KEY =process.env.REACT_APP_OPENAI_KEY
+export const OPENAI_KEY ="sk-_M6Hlvw1teFjBTrMES7ySiP45VCSz5BwByIiCRcDHDT3BlbkFJvnzlGprW8PIa1Ww6Gs8dQoNHIjKMyOElxcYg57L1QA"

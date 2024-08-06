@@ -7,6 +7,8 @@ import { useDispatch,useSelector } from 'react-redux'
 const  useTrailerData =(movieId) =>{
 
 const dispatch = useDispatch()
+
+const trailerVdo = useSelector((store)=>store.trailer.trailerVdo)
 const getMovieVdos = async () => {
 
   const data = await fetch(
@@ -21,7 +23,7 @@ const getMovieVdos = async () => {
   dispatch(addTrailerVdos(trailer));
 }; 
 useEffect(()=>{
-  getMovieVdos();
+  !trailerVdo && getMovieVdos();
 },[])
 }
 

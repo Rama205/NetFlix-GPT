@@ -60,11 +60,9 @@ const HandleLanguageChange =(e) =>{
 
   return (
     <div className="absolute w-screen px-8 py-2 bg-gradient-to-b from-black z-10 flex flex-col md:flex-row justify-between">
-      <img className="w-36" alt="logo" src={LOGO} />
+      <img className="w-44 mx-auto md:mx-0" alt="logo" src={LOGO} />
       {user && (
-        <div className="flex p-2">
-
-
+        <div className="flex p-2 justify-between">
           {showGPTSearch && (
             <select className="p-2 bg-blue-500 text-white m-2 rounded-lg"
             onChange={HandleLanguageChange}>
@@ -79,7 +77,7 @@ const HandleLanguageChange =(e) =>{
           >
           {showGPTSearch ? "Home" : "GPT Serach"}
           </button>
-          <img alt="userIcon" className=" w-10 h-10" src={user?.photoURL} />  
+          <img alt="userIcon" className="hidden md:block w-10 h-10" src={user?.photoURL} />  
           <button onClick={HandleSignOut} className="font-bold text-white">
             Sign Out
           </button>
